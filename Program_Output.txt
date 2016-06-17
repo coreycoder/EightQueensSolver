@@ -1,0 +1,377 @@
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 1
+How big is the chess board?
+=> 18
+How many test cases would you like to run?
+=> 100
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+-----------------------------------------------------
+Number of successes out of 100: 1
+Average time per Hill Climb: 1 milliseconds.
+
+
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 1
+How big is the chess board?
+=> 18
+How many test cases would you like to run?
+=> 200
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+-----------------------------------------------------
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+-----------------------------------------------------
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+-----------------------------------------------------
+Number of successes out of 200: 3
+Average time per Hill Climb: 1 milliseconds.
+
+
+
+
+
+
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 2
+How big is the chess board?
+=> 18
+How big is the initial population?
+=> 50
+Generation: 1
+best heuristic: 9
+.
+.
+.
+.
+Generation: 55055
+best heuristic: 1
+Generation: 55056
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+best heuristic: 0
+18-Queen Problem with initial population of 50
+This algorithm took 3245 milliseconds to complete.
+
+
+
+
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 2
+How big is the chess board?
+=> 18
+How big is the initial population?
+=> 100
+Generation: 1
+best heuristic: 11
+.
+.
+.
+.
+Generation: 19837
+best heuristic: 1
+Generation: 19838
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+best heuristic: 0
+18-Queen Problem with initial population of 100
+This algorithm took 2661 milliseconds to complete.
+
+
+
+
+
+
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 2
+How big is the chess board?
+=> 18
+How big is the initial population?
+=> 250
+Generation: 1
+best heuristic: 7
+.
+.
+.
+.
+Generation: 29996
+best heuristic: 1
+Generation: 29997
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+best heuristic: 0
+18-Queen Problem with initial population of 250
+This algorithm took 9790 milliseconds to complete.
+
+
+
+
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 2
+How big is the chess board?
+=> 18
+How big is the initial population?
+=> 500
+Generation: 1
+best heuristic: 5
+.
+.
+.
+.
+Generation: 15844
+best heuristic: 1
+Generation: 15845
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+best heuristic: 0
+18-Queen Problem with initial population of 500
+This algorithm took 15181 milliseconds to complete.
+
+
+
+
+
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 2
+How big is the chess board?
+=> 18
+How big is the initial population?
+=> 1000
+Generation: 1
+best heuristic: 8
+.
+.
+.
+.
+Generation: 28405
+best heuristic: 1
+Generation: 28406
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+best heuristic: 0
+18-Queen Problem with initial population of 1000
+This algorithm took 98508 milliseconds to complete.
+
+
+
+
+Welcome to Corey's N-Queen Solver
+----------------------------------------
+How would you like to solve this?
+1) Hill Climbing cases
+2) Genetic Algorithm
+3) Exit
+=> 2
+How big is the chess board?
+=> 18
+How big is the initial population?
+=> 2500
+Generation: 1
+best heuristic: 6
+.
+.
+.
+.
+Generation: 239
+best heuristic: 1
+Generation: 240
+[O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O]
+[X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O]
+[O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O]
+[O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O][O]
+[O][O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O][O][O]
+[O][O][O][X][O][O][O][O][O][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][X][O][O][O][O][O][O][O][O][O]
+[O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][O][X][O]
+best heuristic: 0
+18-Queen Problem with initial population of 2500
+This algorithm took 6220 milliseconds to complete.
